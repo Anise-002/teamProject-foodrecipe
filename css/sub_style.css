@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; 
+    box-sizing: border-box;
+}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+#wrap{
+    width: 1440px;
+    margin: 0 auto;
+}
+/* 로고 */
+h1 a{
+    display: block;
+    /* width: 30px;
+    height: 39px; */
+    width: 60px;
+    height: 69px;
+    margin-right: 20px;
+    position: absolute;
+    left: 50%;
+    /* top: 5px; */
+    top: 16px;
+    margin: 0 0 0 -30px;
+    display: block;
+}
+h1 a img{
+    width: 60px;
+    height: 69px;    
+    /* width: 30px;
+    height: 39px; */
+}
+/************ 네비****************/
+nav{
+    height: 100px;
+    /* height: 50px; */
+    width: 1440px;
+    background-color: #91B2DD;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    z-index: 10;
+}
+nav>ul{
+    display: flex;
+}
+nav ul>li>a{
+    display: block;
+    font-size: 16px;
+    width: 126px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px; 
+    margin: 0 12.5px;
+}
+nav> ul>li>a{
+    font-weight: 800;
+}
+nav>ul>li:hover>a{
+    border-bottom: 4px solid white;
+}
+nav>ul:last-child>li:hover>a{
+    border-bottom: none;
+}
+
+
+nav ul li .sub_menu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 3px solid #91B2DD;
+    border-radius: 0 0 30px 30px;    
+}
+nav ul>li:hover .sub_menu{
+    display: block;
+}
+nav ul li .sub_menu a{
+    text-align: center;
+    color: black;
+}
+nav ul li .sub_menu a:hover{
+    font-weight: 900;
+    color: #91B2DD;
+}
+nav .menu_left{
+    position: absolute;
+    left: 60px;
+    top: 45px;
+    /* top: 0px; */
+}
+
+nav .menu_right{
+    position: absolute;
+    right:237px;
+    top: 45px;
+    /* top: 0px; */
+}
+nav .menu_right a{
+    width: 80px;
+    height: 50px;
+    margin: 0 3 0 0; 
+}
+nav .menu_login{
+    position: absolute;
+    right: 52px;
+    top: 10px;
+    justify-content: right;    
+}
+nav .menu_login a{
+    width: 40px;
+    margin: 0px;
+    line-height: 15px;
+    font-weight: 400;
+    font-size: 13px;
+}
+nav .menu_login a i{
+    display: block;
+    font-size: 20px;
+}
+nav>ul>li.on>a{
+    border-bottom: 4px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************푸터********************** */
+footer{
+    width: 1440px;
+    height: 352px;
+    background: #FF9F8D;
+    position: relative;
+    border-radius: 80px 80px 0px 0px;
+    display: flex;
+}
+/* -----------푸터section 위치---------- */
+footer section:nth-child(1){
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+}
+footer section:nth-child(2){
+    position: absolute;
+    bottom: 93px;
+    right: 444px;
+    color: #fff;
+}
+footer section:nth-child(3){
+    position: absolute;
+    top: 130px;
+    right: 242px;
+}
+footer section:nth-child(4){
+    position: absolute;
+    top: 183px;
+    right: 96px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*--- 푸터 section 1------- */
+.size12{
+    font-size: 12px;
+}
+.size16{
+    font-size: 16px;
+    font-weight: bold;
+}
+footer section:nth-child(1) div.pro-img{
+    width: 215px;
+    height: 215px;
+    border-radius: 100%;
+    background: url(../image/img13.jpg);
+    background-position: 70% 100%;
+    margin-right: 20px;
+}
+footer section:nth-child(1) h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+footer section:nth-child(1) a{
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 23px;    
+}
+footer section:nth-child(1) p{
+    color: #fff;
+    margin-bottom: 3px;
+}
+footer section:nth-child(1) form{
+    color: #fff;
+    width: 302px;
+    height: 40px;
+    position: relative;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+footer section:nth-child(1) input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    background:none;
+    color: #fff;
+    padding: 0px 10px ;
+    outline: none;
+}
+footer section:nth-child(1) form i{
+    position: absolute;
+    right: 20px;
+    font-size: 23px;
+}
+
+/* --------푸터section 2---------- */
+footer section:nth-child(2) span{
+    font-size:14px;
+    font-weight: bold;
+}
+footer section:nth-child(2)>ul{
+    margin-right: 25px;
+    float: left;
+}
+footer section:nth-child(2) ul li>a{
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+}
+
+/*--------- 푸터section 3---------- */
+footer section:nth-child(3) ul{
+    display: flex;
+}
+footer section:nth-child(3) ul li a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    color: #fff;
+}
+footer section:nth-child(3) ul li a i{
+    font-size: 25px;
+}
+
+
+
+/*-------- 푸터section 4------------ */
+footer section:nth-child(4) img{
+    display: block;
+    width: 46px;
+    height: 58.3px;
+    margin-right: 15px;
+}
+footer section:nth-child(4) p{
+    color: #fff;
+    font-size: 12px;
+}
